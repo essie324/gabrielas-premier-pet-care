@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Gabriela's Premier Pet Care</title>
+<meta name="description" content="Get in touch with Gabriela's Premier Pet Care. Serving Orlando, FL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;0,700;1,400&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo">Gabriela's Premier Pet Care</a>
+    <nav class="primary" id="primaryNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="book.html">Book Appointment</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="book.html" class="btn nav-cta">Book</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('primaryNav').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<section style="padding-top:96px;">
+  <div class="container two-col">
+
+    <div class="photo">
+      <img src="https://images.squarespace-cdn.com/content/v1/69b4c6f521311439992d2041/1773622082687-PJR0KACG17HH7O1P91FL/unsplash-image-f5xgRDV5YXk.jpg" alt="Two birds perched together">
+    </div>
+
+    <div class="contact-info">
+      <h1 class="section-title" style="margin-top:0;">Contact Us</h1>
+      <div class="big-info">
+        <p>Have questions or want to schedule pet sitting?</p>
+        <p>Serving the Orlando, FL area.</p>
+        <p>
+          <a href="mailto:gabyspremierpetcare@icloud.com">gabyspremierpetcare@icloud.com</a><br>
+          <a href="tel:+14076987386">(407) 698-7386</a>
+        </p>
+        <p>Fill out the contact form below and I'll get back to you as soon as possible.</p>
+      </div>
+
+      <form class="form-wrap" style="margin-top:32px;" onsubmit="event.preventDefault(); alert('Thanks! This form is a placeholder — hook it up to Formspree, Netlify Forms, or your backend of choice.');">
+        <div class="field">
+          <label>Name</label>
+          <div class="form-row">
+            <input type="text" name="first_name" placeholder="First name" required>
+            <input type="text" name="last_name"  placeholder="Last name" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="phone">Phone <span class="req">(required)</span></label>
+          <input id="phone" type="tel" name="phone" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email">
+        </div>
+        <div class="field">
+          <label for="message">Message <span class="req">(required)</span></label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer" style="margin-top:96px;">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Gabriela's Premier Pet Care</h4>
+        <p style="max-width:44ch; color:#c9c6be;">Trusted dog sitting, dog walking, and overnight care. Serving the Orlando, FL area.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="book.html">Book Appointment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:gabyspremierpetcare@icloud.com">gabyspremierpetcare@icloud.com</a></li>
+          <li><a href="tel:+14076987386">(407) 698-7386</a></li>
+          <li>Orlando, FL</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Gabriela's Premier Pet Care</span>
+      <span>Built with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

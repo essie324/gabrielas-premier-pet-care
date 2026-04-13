@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About — Gabriela's Premier Pet Care</title>
+<meta name="description" content="Meet Gabriela — a family-run pet sitting business serving Orlando, FL with loving, dependable care.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;0,700;1,400&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo">Gabriela's Premier Pet Care</a>
+    <nav class="primary" id="primaryNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="book.html">Book Appointment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="book.html" class="btn nav-cta">Book</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('primaryNav').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<header class="page-header">
+  <div class="container">
+    <h1>Who we are</h1>
+  </div>
+</header>
+
+<section style="padding-top:40px;">
+  <div class="container two-col">
+    <div class="photo">
+      <img src="https://images.squarespace-cdn.com/content/v1/69b4c6f521311439992d2041/20c0146e-8ec5-456b-9147-63c6979e5259/IMG_1853.jpeg" alt="Gabriela and her family with their pets">
+    </div>
+    <div>
+      <p>We are a family business. My name is Gabriela, and I started my dog sitting business because of my deep love for animals. I understand how important it is to know your pet is in safe and caring hands while you're away, because I have my own pets that I love as my own children.</p>
+      <p>I provide dependable, loving care for animals of all sizes and personalities. Whether it's a walk, playtime, feeding, or simply keeping them company, I focus on making your pet feel comfortable and happy.</p>
+      <p>Pet parents trust me because I treat every animal as if they were my own.</p>
+      <p><strong>My mission is to give your pets reliable, loving, and safe care.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2 class="section-title">Interested in working together?</h2>
+    <p>Fill out some info and we'll be in touch shortly. We can't wait to hear from you!</p>
+    <div class="actions">
+      <a href="contact.html" class="btn">Contact us</a>
+      <a href="services.html" class="btn btn-outline" style="margin-left:10px;">See services</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Gabriela's Premier Pet Care</h4>
+        <p style="max-width:44ch; color:#c9c6be;">Trusted dog sitting, dog walking, and overnight care. Serving the Orlando, FL area.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="book.html">Book Appointment</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:gabyspremierpetcare@icloud.com">gabyspremierpetcare@icloud.com</a></li>
+          <li><a href="tel:+14076987386">(407) 698-7386</a></li>
+          <li>Orlando, FL</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Gabriela's Premier Pet Care</span>
+      <span>Built with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
