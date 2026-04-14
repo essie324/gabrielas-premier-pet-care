@@ -90,6 +90,9 @@ nav.primary a:hover, nav.primary a.active { border-bottom-color: #1b1b1b; }
   display: flex; align-items: center; justify-content: center;
   padding: 0 24px; text-align: center;
 }
+.hero-text {
+  flex-direction: column; gap: 28px;
+}
 .hero-text h1 {
   font-family: 'Young Serif', serif;
   color: #c6d6e8;
@@ -98,6 +101,19 @@ nav.primary a:hover, nav.primary a.active { border-bottom-color: #1b1b1b; }
   margin: 0;
   text-shadow: 0 2px 12px rgba(0,0,0,0.35);
   max-width: 14ch;
+}
+.hero-cta {
+  font-size: 17px;
+  padding: 16px 40px;
+  background: #fff;
+  color: #1b1b1b;
+  font-weight: 600;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+.hero-cta:hover {
+  background: #e8e6df;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(0,0,0,0.3);
 }
 
 /* ------- Page header (simple banner for inner pages) ------- */
@@ -291,11 +307,97 @@ footer a:hover { color: #fff; }
   font-size: 14px; color: #9a978f;
 }
 
+/* ------- Trust bar ------- */
+.trust-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 32px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #333;
+}
+.trust-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px; height: 28px;
+  background: #1b1b1b;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* ------- Booking services grid ------- */
+.book-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 32px;
+}
+.book-service-item {
+  background: #ecebe4;
+  border-radius: 10px;
+  padding: 32px 28px;
+  text-align: center;
+}
+.book-service-item h3 {
+  font-family: 'Young Serif', serif;
+  font-size: 1.4rem;
+  margin: 0 0 8px;
+}
+.book-price {
+  font-family: 'Young Serif', serif;
+  font-size: 1.1rem;
+  margin: 0 0 12px;
+  color: #1b1b1b;
+}
+.book-service-item p:last-child {
+  margin: 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* ------- Testimonials ------- */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 32px;
+}
+.testimonial {
+  background: #f2efe9;
+  border-radius: 10px;
+  padding: 32px 28px;
+  margin: 0;
+}
+.testimonial p {
+  font-style: italic;
+  margin: 0 0 16px;
+  color: #333;
+  line-height: 1.6;
+}
+.testimonial cite {
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #666;
+}
+
 /* ------- Responsive ------- */
 @media (max-width: 900px) {
   .two-col { grid-template-columns: 1fr; gap: 40px; }
   .social-grid { grid-template-columns: repeat(2, 1fr); }
   .service-cards { grid-template-columns: 1fr; gap: 40px; }
+  .book-services { grid-template-columns: 1fr; }
+  .testimonials { grid-template-columns: 1fr; }
+  .trust-bar { gap: 16px; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .form-row { grid-template-columns: 1fr; gap: 0; }
   nav.primary ul { display: none; }
